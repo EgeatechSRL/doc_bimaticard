@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 return [
-    'baseUrl' => 'https://jigsaw-docs-template.tighten.co',
+    'baseUrl' => 'https://egeatechsrl.github.io/doc_bimaticard',
     'production' => true,
 
     // DocSearch credentials
