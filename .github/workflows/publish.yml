@@ -24,7 +24,7 @@ jobs:
       run: composer validate
 
     - name: Composer
-      run: composer install --no-progress --no-suggest
+      run: composer install --no-progress
 
     - name: Node
       run: npm install
@@ -33,7 +33,7 @@ jobs:
       run: npm run prod
 
     - name: CNAME
-      run: echo "privacyfed.github.io/doc_extrafield" > ./build_production/CNAME
+      run: echo "egeatechsrl.github.io/doc_bimaticard" > ./build_production/CNAME
 
     - name: gh-pages
       uses: JamesIves/github-pages-deploy-action@v4.4.2
