@@ -1,4 +1,18 @@
 {
+    "name": "egeatechsrl/doc_bimaticard",
+    "description": "Bimatica docs",
+    "homepage": "https://geekpiu.com",
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com"
+        },
+        {
+            "name": "Samuele Orfei",
+            "email": "s.orfei@egeatech.com"
+        }
+    ],
+    "license": "MIT",
     "require": {
         "tightenco/jigsaw": "^1.7",
         "tightenco/jigsaw-docs-template": "^1.1",
