@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Str;
 
 return [
@@ -22,11 +24,11 @@ return [
     'isActiveParent' => function ($page, $menuItem) {
         if (is_object($menuItem) && $menuItem->children) {
             return $menuItem->children->contains(function ($child) use ($page) {
-                return trimPath($page->getPath()) == trimPath($child);
+                return trimPath($page->getPath()) === trimPath($child);
             });
         }
     },
     'url' => function ($page, $path) {
-        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
+        return Str::startsWith($path, 'http') ? $path : $page->baseUrl.'/'.trimPath($path);
     },
 ];
